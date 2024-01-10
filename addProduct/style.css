@@ -1,0 +1,122 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #FFFACC;
+    height: 100%;
+}
+
+.main{
+    margin: 0 auto;
+}
+._container{
+    min-height: 100%;
+    max-width: 1380px;
+    margin: 20px;
+}
+
+.burger{
+width: 70px;
+height: 70px;
+border: 1px solid #432571;
+position: relative;
+display: block;
+border-radius: 50px;
+
+}
+.burger_line{
+    position: absolute;
+    top: 26px;
+    left: calc(50% - 22px);
+    background-color: black
+}
+
+.burger_line:before{
+content: '';
+position: absolute;
+top: 15px;
+height: 4px;
+width: 45px;
+background-color: #432571;
+transition: transform 1s ease;
+}
+
+.burger_line:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    background-color: #432571;
+    transition: transform .5s ease;
+}
+.active_burger:before{
+    content: '';
+    transform: rotate(45deg) translate(-14%, -100%);
+   
+    transition: transform .5s ease;
+}
+.active_burger:after{
+    content: '';
+    transform: rotate(-45deg) translate(-10%, 100%);
+    transition: transform .5s ease;
+}
+.wrapper__btns{
+    transform: translate(-100%, 0%);
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    top: 145px;
+    opacity: 0;
+    display: flex;
+    transition: .5s ease-in;
+}
+
+.active_wrapper{
+    gap: 50px;
+    display: flex;
+    opacity: 1;
+    transition: .5s ease;
+    transform: translate(0%, 0%);
+}
+
+.btn{
+    max-width: 100%;
+    width: 300px;
+    min-height: 75px;
+    border-radius: 20px;
+    border: 2px solid #432571;
+    background-color: #FFFACC;
+    color: #432571;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.btn:first-child{
+    background-color: #432571;
+    color: #FFFACC;
+}
+
+.btn_title{
+    position: relative;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 141.667%;
+    margin: 0px; 
+    top: 17px; 
+}
+
+.btn_title:not(:first-child){
+    color: #432571;
+}
+
+
+.btn_link{
+    color: inherit;
+    text-decoration: none;
+}
