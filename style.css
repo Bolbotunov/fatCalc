@@ -34,6 +34,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .btn:first-child{
@@ -55,4 +56,10 @@ body{
 
 .btn_title:not(:first-child){
     color: #432571;
+}
+
+
+.btn_link{
+    color: inherit;
+    text-decoration: none;
 }
