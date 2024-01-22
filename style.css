@@ -2,6 +2,7 @@ html{
     height: 100%;
     background-color: #FFFACC;
     transition: .3s all;
+    overflow: hidden;
 }
 ._container{
     margin: 0 auto;
