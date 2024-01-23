@@ -12,16 +12,44 @@
     <link rel = "stylesheet" href="../normalize.css">
 </head>
     <body>
-        <main class="main _container">
-            <div class="wrapper">
+        <main class="main">
+            <header class="header _container">
                 <div class="burger"><span class="burger_line"></span></div>
-                <div class="wrapper__btns">
-                    <div class="btn"><p class="btn_title">My profile</p></div>
-                    <div class="btn"><p class="btn_title"><a href='../addProduct/index.html' class='btn_link'>Add product</a></p></div>
-                    <div class="btn"><p class="btn_title">Librarfggfy</p></div>
+                <div class="header__wrapper">
+                    <div class="btn"><p class="btn_title"><a href='../index.html' class='btn_link'>My profile</a></p></div>
+                    <div class="btn"><p class="btn_title"><a href='addProduct/index.html' class='btn_link'>Add product</a></p></div>
+                    <div class="btn"><p class="btn_title">Library</p></div>
                     <div class="btn"><p class="btn_title">Today info</p></div>
                 </div>
-            </div>
+            </header>
+                <div class="btn_wrapper _container">
+                    <input placeholder="Enter name of product..." class="add_product" >
+                </div>
+                <div class="btn_add">
+                    <div class="product_info">
+                        <ul class="product_parameters">
+                            <li class="parameters_title"><p class="protein">Protein, per 100g</p></li>
+                            <input type="text" class="parameters_num" id="protein_color">
+                        </ul>
+                        <ul class="product_parameters">
+                            <li class="parameters_title"><p class="fat">Fats, per 100g</p></li>
+                            <input type="text" class="parameters_num" id="fat_color">
+                        </ul>
+                        <ul class="product_parameters">
+                            <li class="parameters_title"><p class="carbo">Carbohydrates, per 100g</p></li>
+                            <input type="text" class="parameters_num" id="carbo_color">
+                        </ul>
+                        <ul class="product_parameters">
+                            <li class="parameters_title"><p>Calories kCal, per 100g</p></li>
+                            <input type="text" class="parameters_num">
+                        </ul>
+                        <ul class="product_parameters">
+                            <li class="parameters_title"><p>Protein, per 100g</p></li>
+                            <input type="text" class="parameters_num">
+                        </ul>
+                    </div>
+                   <p class="title_btn">Add</p>
+                </div>
         </main>
         <script src="script.js"></script>
     </body>
