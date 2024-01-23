@@ -11,7 +11,6 @@ html{
     justify-content: center;
     overflow: hidden;
 }
-
 body{
     border-radius: 20px;
     height: 100%;
@@ -20,14 +19,9 @@ body{
 
 .main{
     min-height: 100vh;
-    position: relative;
-    z-index: 5;
 }
+
 .header{
-    justify-content: space-around;
-    height: 120px;
-}
-.header__wrapper{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -36,121 +30,51 @@ body{
     top: 1%;
     transition: .3s all;
     gap: 10px;
-    position: relative;
-    z-index: 1;
-}
-
-
-
-
-._active{
-    min-height: 100%;
-    max-width: 1380px;
-    margin: 0px;
-}
-
-.burger{
-    display: none;
 }
 
 @media(max-width:1250px){
-    .header__wrapper{
-        /* opacity: 1;
-        visibility: visible; */
-        opacity: 0;
-        visibility: hidden;
-        z-index: 2;
-        height: 100vh;
-        width: 100vw; 
-        background-color: #FFFACC;
-        flex-direction: column;
-        position: absolute;
+    .header{
+        max-width: 900px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
         transition: .3s all;
-    }
-    .active__menu{
-        opacity: 1;
-        visibility: visible;
-        /* justify-content: center;
-        gap: 80px;
-        transform: translateX(0%);
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-        position: relative;
-        z-index: 3;
-        padding-top: 55px; */
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
-@media(max-width:1250px){
-    .btn_wrapper{
-        display: flex;
-        gap: 60px;
-        z-index: 1;
-        position: relative;
-    }
-    .burger{
-    width: 68px;
-    height: 68px;
-    display: block;
-    border-radius: 50px;
-    position: relative;
-    left: 22px;
-    top: 22px;
-    z-index: 10;
+
+.profile{
+    height: 100vh;
 
 }
-.burger_line{
-    position: absolute;
-    top: 26px;
-    left: calc(50% - 22px);
-    background-color: black
+.profile__title{
+    max-width: 100%;
+    text-align: center;
 }
-
-.burger_line:before{
-content: '';
-position: absolute;
-top: 15px;
-height: 4px;
-width: 45px;
-background-color: #432571;
-transition: transform 1s ease;
-}
-
-.burger_line:after{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 45px;
-    background-color: #432571;
-    transition: transform .5s ease;
-}
-.active_burger:before{
-    content: '';
-    transform: rotate(45deg) translate(-12%, -120%);
-    transition: transform .5s ease;
-}
-.active_burger:after{
-    content: '';
-    transform: rotate(-45deg) translate(-12%, 100%);
-    transition: transform .5s ease;
-}
+.title__text{
+    margin: 0px;
+    font-family: Jockey One;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 141.667%;
+    color: #432571;
 
 }
-
 .btn{
     max-width: 100%;
     width: 300px;
     min-height: 75px;
     border-radius: 20px;
     border: 2px solid #432571;
-    box-shadow: 1px 2px 2px #432571;
     background-color: #FFFACC;
     color: #432571;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    transition: .7s all;
 
+}
 
 .btn:first-child{
     background-color: #432571;
@@ -177,120 +101,4 @@ transition: transform 1s ease;
 .btn_link{
     color: inherit;
     text-decoration: none;
-}
-
-@media(max-width:1250px){
-    .btn{
-        width: 100%;
-        max-width: 450px;
-        margin-left: 30px;
-        margin-right: 30px;
-        min-height: 100px;
-        border-radius: 20px;
-    }
-    .btn_title{
-        font-size: 32px;
-        transition: all .3s;
-        top: 24px;
-        position: relative;
-    }
-}
-
-
-.header__title{
-    text-align: center;
-    font-family: Jockey One;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 141.667%;
-    color: #432571;
-    position: relative;
-    left: 7px;
-    top: -5px;
-}
-
-.add_product{
-    width: 756px;
-    min-height: 70px;
-    border-radius: 20px;
-    border: 1px solid #432571;
-    
-    background-color: #FFFACC;
-    color: #432571;
-    justify-content: center;
-    font-weight: 100;
-    align-items: center;
-    text-align: center;
-    display: block;
-}
-.btn_wrapper{
-    top: 30px;
-    bottom: 30px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-input::placeholder{
-    display: inline-block;
-    background-color: #FFFACC;
-    color: #432571;
-    font-family: Jockey One;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 141.667%;
-    position: relative;
-    top: 6px;
-}
-.product_parameters{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -3px;
-   }
-.parameters_title{
-    list-style: none;
-}
-.parameters_title p{
-    background-color: #FFFACC;
-    font-family: Jockey One;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 150.667%;
-    position: relative;
-    right: 5px;
-}
-.parameters_num{
-    box-sizing: content-box;
-    position: relative;
-    top: 8px;
-    right: 32px;
-height: 70px;
-width: 84px;
-border-radius: 20px;
-}
-.protein{
-    color: #1CA3AC;
-}
-#protein_color .protein{
-    background-color: #C1FBFF;
-    color: #1CA3AC;
-}
-.fat{
-    color: #939600;
-}
-#fat_color{
-    background-color: #FDFF94;
-}
-.carbo{
-    color: #F27171;
-}
-#carbo_color{
-    background-color: #F27171;
 }
