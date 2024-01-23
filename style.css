@@ -9,7 +9,7 @@ html{
     max-width: 1380px;
     box-sizing: content-box;
     justify-content: center;
-
+    overflow: hidden;
 }
 body{
     border-radius: 20px;
